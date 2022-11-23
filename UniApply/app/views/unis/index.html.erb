@@ -1,0 +1,12 @@
+<h1>Universities</h1>
+
+
+<ul>
+  <% @unis.each do |uni| %>
+    <li>
+        <%= link_to uni.name, uni %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add University", new_uni_path %>

@@ -1,0 +1,17 @@
+<%= form_with model: @uni do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :country %><br>
+    <%= form.text_field :country %><br>
+  </div>
+
+    <br>
+    
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
